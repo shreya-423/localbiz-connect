@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Business = require('../models/business');
+const Business = require('../models/Business');
 
 // POST /api/businesses — Register a new business
 router.post('/', async (req, res) => {

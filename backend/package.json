@@ -7,7 +7,6 @@
   "license": "ISC",
   "keywords": [],
   "scripts": {
-    "dev": "nodemon index.js",
     "start": "node index.js"
   },
   "dependencies": {
@@ -16,7 +15,7 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
-    "mongoose": "^8.16.5"
+    "mongoose": "^8.17.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
