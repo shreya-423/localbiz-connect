@@ -1,0 +1,211 @@
+/* ========== Base Styles ========== */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ========== App Layout ========== */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ========== Hero Section ========== */
+.hero {
+  width: 100%;
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  border-radius: 10px;
+  margin: 2rem auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  max-width: 800px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin: 0 auto;
+}
+
+/* ========== Call to Action Button ========== */
+.cta-btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: #06b6d4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #0891b2;
+}
+
+button:focus {
+  outline: 2px solid #06b6d4;
+  outline-offset: 2px;
+}
+
+/* ========== Form Section ========== */
+.form-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 700px;
+}
+
+.form-container h2 {
+  margin-bottom: 1rem;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* ========== Filter Bar ========== */
+.filter-bar {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 700px;
+}
+
+.filter-bar input,
+.filter-bar select {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* ========== Business List Section ========== */
+.business-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.business-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  border-left: 5px solid #2196f3;
+  transition: transform 0.3s ease;
+}
+
+.business-card:hover {
+  transform: translateY(-5px);
+}
+
+.business-card h3 {
+  margin-top: 0;
+  font-size: 1.3em;
+  color: #007bff;
+}
+
+.business-card p {
+  margin: 6px 0;
+  color: #555;
+}
+
+.business-card a {
+  color: #2196f3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.business-card a:hover {
+  text-decoration: underline;
+}
+
+.business-card .actions {
+  margin-top: 10px;
+}
+
+.business-card .actions button {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.business-card .actions button:hover {
+  background-color: #1976d2;
+}
+
+/* ========== Footer ========== */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 4rem;
+  background-color: #343a40;
+  color: white;
+  font-size: 0.9em;
+}
+
+/* ========== Divider ========== */
+hr {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* ========== Utility Classes ========== */
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+.hover-shadow:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .filter-bar {
+    flex-direction: column;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
